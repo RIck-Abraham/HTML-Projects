@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Copyright Year</title>
+    <script>
+      // This script will run when the DOM content is fully loaded
+      document.addEventListener("DOMContentLoaded", (event) => {
+        // Getting the current year
+        const currentYear = new Date().getFullYear();
+
+        // Setting the current year in the HTML element with the ID 'currentYear'
+        document.getElementById("currentYear").textContent = currentYear;
+      });
+    </script>
+  </head>
+  <body>
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span> Your Company Name. All rights
+        reserved.
+      </p>
+    </footer>
+  </body>
+</html>
